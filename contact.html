@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeremy's Portfolio</title>
+    <link rel="stylesheet" href="Index.css">
+    <style>
+        .contact1{
+            background-color: white;
+            justify-self: right;
+            height: 35em;
+            width: 35em;
+            margin-right: 10em;
+            margin-top: 50px;
+            border-radius: 10px;
+        }
+        .contact2{
+            background-color: white;
+            width: 35em;
+            height: 35em;
+            margin-top: -36em;
+            margin-left: 200px;
+            border-radius: 10px;
+        }
+        .name, .email{
+            padding: 5px;
+            width: 30em;
+            margin: 10px;
+            text-align: left;
+            justify-items:left;
+        }
+        .bio{
+            margin: 10px;
+            padding: 10px;
+        }
+        .contact2 > h2{
+            margin: 20px;
+            justify-self: center;
+        }
+        button{
+            background-color: white;
+            height: 3em;
+            width: 20em;
+            margin-left: 135px;
+        }
+        .contact1 > p{
+            justify-self: center;
+            padding: 10px;
+        }
+        .contact1 > h2{
+            justify-self: center;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><img src="Images/Logo.png" height="25%" width="25%" alt="Jeremy Figueroa"></div>
+            <ul class="nav-links">
+                <li><a href="Index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="contact1">
+        <h2>Info</h2>
+        <p>Phone: 555-555-5555</p>
+        <p>Email: jfigue694@west-mec.org</p>
+        <p>Location: Buckeye, AZ</p>
+        <p>Github: <a target="_blank" href="https://github.com/SplashbroJerm">github.com/SplashbroJerm</a></p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3325.6709253397585!2d-112.29541422400193!3d33.53594047335572!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b4104080e38d9%3A0x1fbd2919e78fa444!2sWest-MEC%20-%20Central%20Campus!5e0!3m2!1sen!2sus!4v1734033556898!5m2!1sen!2sus" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>x
+    </section>
+    <section class="contact2">
+        <h2>Contact me</h2>
+        <form action="" class="form">
+            <div class="form-group1">
+                <label for="fname" class="name">Full Name</label>
+                <br>
+                <input type="text" id="name" name="name" class="name" placeholder="Name">
+            </div>
+            <div class="form-group1">
+                <label for="email" class="email">Email Adress</label>
+                <br>
+                <input type="email" id="email" name="email" class="email" placeholder="You@example.com" required>
+            </div>
+            <div class="form-group">
+                <label for="para" class="bio">Tell me something</label>
+                <br>
+                <textarea name="bio" class="bio" cols="50" rows="13" placeholder="Type message here" required></textarea>
+             </div>
+             <button>Submit</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2024 Jeremy Figueroa. All rights reserved.</p>
+    </footer>
+</body>
+</html>

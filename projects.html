@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeremy's Portfolio</title>
+    <link rel="stylesheet" href="Index.css">
+    <style>
+        .OPP{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 10px;
+        }
+        h1{
+            justify-self: center;
+        }
+        .box{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 20px;
+        }
+        .box > p{
+            margin: 9px;
+        }
+        .L{
+            background-color: rgb(174, 174, 174);
+            width: 6em;
+            padding: 5px;
+            border-radius: 10px;
+            margin: 5px;
+        }
+        .D{
+            display: flex;
+            flex-direction: row;
+        }
+        footer{
+            height: 5%;
+        }
+        button{
+            background-color: blue;
+            padding: 10px;
+            width: 50px;
+            border-radius: 10px;
+        }
+        button > a{
+            color: white;
+            text-decoration: none;
+        }
+        @media(max-width:760px){
+            .OPP{
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><img src="Images/Logo.png" height="25%" width="25%" alt="Jeremy Figueroa"></div>
+            <ul class="nav-links">
+                <li><a href="Index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>My Projects</h1>
+    <section class="OPP">
+        <div class="box" id="box1">
+            <img src="Images/Resume3.png" alt="Resume3" width="100px" height="100px">
+            <p>Resume: A personal resume which has a heading bar, sidebar, and main body section. Styled with CSS and made with HTML</p>
+            <div class="D">
+                <p class="L">Informative</p>
+                <p class="L">Responsive</p>
+                <p class="L">Personal</p>
+            </div>
+            <button><a href="/GitHub/Resume3/Index.html" target="_blank">View</a></button>
+        </div>
+        <div class="box" id="box2">
+            <img src="Images/Blog.png" alt="Blog" width="100px" height="100px">
+            <p>Blog: A blog page about tech things. Made with HTML and designed with CSS.</p>
+            <div class="D">
+                <p class="L">Informative</p>
+                <p class="L">Responsive</p>
+                <p class="L">Interactive</p>
+            </div>
+            <button><a href="/GitHub/Blog/Index.html" target="_blank">View</a></button>
+        </div>
+        <div class="box" id="box3">
+            <img src="Images/Form.png" alt="Form" width="100px" height="100px">
+            <p>Form page: A form for joining an adventure club. Asks about phsical questions and general questions.</p>
+            <div class="D">
+                <p class="L">Survey</p>
+                <p class="L">Responsive</p>
+                <p class="L">Interactive</p>
+            </div>
+            <button><a href="/week 15/Day 3/Adventure-travel-club.html" target="_blank">View</a></button>
+        </div>
+        <div class="box" id="box3">
+            <img src="Images/Collage.png" alt="Collage" width="100px" height="100px">
+            <p>Collage: a collage of colors with them organized in boxes, used CSS to style.</p>
+            <div class="D">
+                <p class="L">Decorated</p>
+                <p class="L">Responsive</p>
+            </div>
+            <button><a href="/GitHub/Collage/Index.html" target="_blank">View</a></button>
+        </div>
+        <div class="box" id="box4">
+            <img src="/Portfolio/Images/Rest.png" alt="Collage" width="100px" height="100px">
+            <p>Resteraunt: a resteraunt style webpage with a menu and prices</p>
+            <div class="D">
+                <p class="L">Decorated</p>
+                <p class="L">Hero image</p>
+            </div>
+            <button><a href="/GitHub/Restaurant/Index.html" target="_blank">View</a></button>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Jeremy Figueroa. All rights reserved.</p>
+    </footer>
+</body>
+</html>
